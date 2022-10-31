@@ -14,7 +14,6 @@ import Data.Emails;
 import Mail.Check;
 import Mail.Mail_Info;
 import Mail.Sender;
-import Modules.Stage.S_Login;
 import Potroha.All_Tabs_Close;
 import Potroha.Collector;
 import Potroha.Driver;
@@ -100,11 +99,11 @@ public class All_Tests {
 	@Test
     public static void Mail_Notifications() throws InterruptedException, MessagingException, IOException {
 
-//        Calendar start_time = Calendar.getInstance();
-//        System.setProperty("webdriver.chrome.driver","/Users/svinograd/tools/chromedriver/chromedriver");
-//        new Driver();
-//        new Collector();
-//        new User_Info();
+        Calendar start_time = Calendar.getInstance();
+        System.setProperty("webdriver.chrome.driver","/Users/svinograd/tools/chromedriver/chromedriver");
+        new Driver();
+        new Collector();
+        new User_Info();
 
 //		Check.print_mails(Check.get_emails(Emails.address_1.host,
 //                						   Emails.address_1.user,
@@ -128,25 +127,24 @@ public class All_Tests {
 
         //-------------------------------------------------------------------------
 
-//        S_Login.s_login();
-//        Contract_Sign.contract_sign(Data.Users.User_Test_ID);
-//        //S_Open_House.s_open_house();
-//
-//        //--------------------------------------------------------------------------
-//
-//        Thread.sleep(5000);
-//        Vector<Mail_Info> l = Check.get_emails(Emails.address_1.host,
-//        								 Emails.address_1.user,
-//        								 Emails.address_1.password,
-//        								 "INBOX");
-//        Check.compare_results(Collector.sent_events,l);
-//        All_Tabs_Close.all_tabs_close();
-//        Driver.driver.quit();
-//        Thread.sleep(10000);
-//        Collector.inf += Logger.total_test_time(start_time, Calendar.getInstance());
-//        Sender.sender(Emails.address_1.host,
-//				 	  Emails.address_1.user,
-//				 	  Emails.address_1.password);
-//        new File(System.getProperty("user.dir")+"/contract.pdf").delete();
+        Contract_Sign.contract_sign(Data.Users.User_Test_ID);
+        //S_Open_House.s_open_house();
+
+        //--------------------------------------------------------------------------
+
+        Thread.sleep(5000);
+        Vector<Mail_Info> l = Check.get_emails(Emails.address_1.host,
+        								 Emails.address_1.user,
+        								 Emails.address_1.password,
+        								 "INBOX");
+        Check.compare_results(Collector.sent_events,l);
+        All_Tabs_Close.all_tabs_close();
+        Driver.driver.quit();
+        Thread.sleep(10000);
+        Collector.inf += Logger.total_test_time(start_time, Calendar.getInstance());
+        Sender.sender(Emails.address_1.host,
+				 	  Emails.address_1.user,
+				 	  Emails.address_1.password);
+        new File(System.getProperty("user.dir")+"/contract.pdf").delete();
     }
 }

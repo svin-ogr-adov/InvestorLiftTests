@@ -111,7 +111,7 @@ public class Check {
         try {
             Properties properties = new Properties();
             properties.put("mail.imap.host", host);
-            properties.put("mail.imap.port", "143"); //143
+            properties.put("mail.imap.port", "995"); //143
             properties.put("mail.imap.starttls.enable", "true");
             Session email_session = Session.getDefaultInstance(properties);
 
