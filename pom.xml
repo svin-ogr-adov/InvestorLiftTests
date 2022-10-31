@@ -15,14 +15,8 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.6.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-	    <groupId>org.simplejavamail</groupId>
-	    <artifactId>simple-java-mail</artifactId>
-	    <version>7.5.0</version>
-		</dependency>
-		<dependency>
+			<scope>compile</scope>
+		</dependency>	<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.5.0</version>
@@ -33,6 +27,12 @@
 		    <version>1.81</version>
 		    <scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>javax.mail-api</artifactId>
+		    <version>1.6.2</version>
+		</dependency>		
 		<dependency>
 		    <groupId>org.webjars</groupId>
 		    <artifactId>jquery</artifactId>

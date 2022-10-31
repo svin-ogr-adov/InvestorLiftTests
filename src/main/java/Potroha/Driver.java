@@ -15,7 +15,7 @@ public class Driver {
         //options.addArguments("--auto-open-devtools-for-tabs");
 
         options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get("https://management.brandscience.tech/");
         Map<String, Object> params = Map.of ( "behavior", "allow",
