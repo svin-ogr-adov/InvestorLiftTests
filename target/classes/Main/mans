@@ -1,0 +1,7 @@
+How to update ChromeDriver:
+- Check your version of Chrome browser
+- Check your version of ChromeDriver (chromedriver --version)
+- Download last ChromeDriver from https://chromedriver.chromium.org/downloads
+- Replace old ChromeDriver
+- FOR MAC in your ChromeDriver location run:
+    "xattr -d com.apple.quarantine chromedriver" or "spctl --add --label 'Approved' <name-of-executable>"

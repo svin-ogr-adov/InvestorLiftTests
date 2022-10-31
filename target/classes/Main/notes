@@ -1,0 +1,46 @@
+Open House Registration
+Open House Reminder
+Open House Registration Cancellation
+Offer Made
+Offer Contract Signed
+Proof Of Funds
+Price Reduction
+Property Assigned
+New Deal Posted
+Property Inquiry
+Buyer Registered
+- Open House Cancellation
+- New Open House
+New Lead
+Address Request
+
+js.executeScript("alert('I am an alert box!')");
+
+https://demo.docusign.net/Signing/DocuSignXML.aspx?auditView=1&tm=1660241625949&docs=RESource Atlanta.docx&sb=0&insession=1&ti=12af613b66f841249787e868e50380c2
+https://demo.docusign.net/Signing/DocuSignXML.aspx?auditView=1&tm=1660242234920&docs=RESource Atlanta.docx&sb=0&insession=1&ti=f83b47e276c94c62ab25c4827289038b
+
+
+
+public class Trash {
+    // ---------------PROTON MAIL SHIT------------------------------------------------------------------
+    String proton_mail_link = "https://mail.proton.me/u/0/inbox";
+    String proton_mail_login_field = "//input[@autocomplete='username']";
+    String proton_mail_password_field = "//input[@autocomplete='current-password']";
+    String proton_mail_sign_in_button = "//button[contains(text(),'Sign in')]";
+    String proton_mail_login = "investorlifttest";
+    String proton_mail_password = "&pykwg|gD#9z!D2";
+    String proton_mail_your_feedback_popup = "//form[@class='modal-two-dialog-container']";
+    String proton_mail_your_feedback_popup_cancel_button = "//button[contains(text(),'Cancel')]";
+    String proton_mail_need_permission_message = "/html/body/div[1]/div[3]/div/div[1]/div";
+    String proton_mail_need_permission_close_button = "/html/body/div[1]/div[3]/div/div[1]/button/svg";
+
+    // ---------------OUTLOOK MAIL SHIT-----------------------------------------------------------------
+    String outlook_mail_login_field = "//input[@type='email']";
+    String outlook_mail_password_field = "//*[@type='password']";
+    String outlook_mail_next_button = "//input[@type='submit']";
+    String outlook_mail_sign_in_button = "//*[@value='Sign in']";
+    String outlook_mail_stay_login_dialog = "//div[contains(text(),'Stay signed in?')]";
+    String outlook_mail_stay_login_reject_button = "//input[@id='idBtn_Back']";
+    String outlook_mail_top_left_button = "//button[@id='O365_MainLink_NavMenu']";
+    String outlook_mail_outlook_button = "//span[@class='x-hidden-focus']";
+}
