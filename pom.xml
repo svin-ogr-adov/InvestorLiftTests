@@ -16,7 +16,13 @@
 			<artifactId>testng</artifactId>
 			<version>7.6.1</version>
 			<scope>compile</scope>
-		</dependency>	<dependency>
+		</dependency>	
+		<dependency>
+		    <groupId>com.beust</groupId>
+		    <artifactId>jcommander</artifactId>
+		    <version>1.82</version>
+		</dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.5.0</version>
