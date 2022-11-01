@@ -2,8 +2,12 @@ package Data;
 
 public class Emails {
 	public static class address_1 {
-	    public static String host = "smtp.office365.com";
-	    public static String user = "investorlifttest@outlook.com";
+//	    public static String host = "smtp.office365.com";
+//	    public static String user = "investorlifttest@outlook.com";
+//	    public static String password = "&pykwg|gD#9z!D2";
+//	    public static String url = "https://outlook.live.com/mail/0/";
+	    public static String host = "imap.gmx.com";
+	    public static String user = "svinograd@gmx.com";
 	    public static String password = "&pykwg|gD#9z!D2";
 	    public static String url = "https://outlook.live.com/mail/0/";
 	}

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 31 01:13:26 AST 2022</td>
+<td>Started on:</td><td>Mon Oct 31 13:22:56 AST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>144 seconds (144623 ms)</td>
+<tr><td>Total time:</td><td>146 seconds (146535 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Main.All_Tests.Mail_Notifications()'><b>Mail_Notifications</b><br>Test class: Main.All_Tests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: com/sun/mail/util/MailLogger
-	at javax.mail.Session.initLogger(Session.java:283)
-	at javax.mail.Session.&lt;init&gt;(Session.java:268)
-	at javax.mail.Session.getDefaultInstance(Session.java:378)
-	at javax.mail.Session.getDefaultInstance(Session.java:418)
-	at Mail.Check.get_emails(Check.java:194)
+<td><div><pre>javax.mail.AuthenticationFailedException: authentication failed
+	at com.sun.mail.imap.IMAPStore.protocolConnect(IMAPStore.java:732)
+	at javax.mail.Service.connect(Service.java:366)
+	at javax.mail.Service.connect(Service.java:246)
+	at Mail.Check.get_emails(Check.java:201)
 	at Main.All_Tests.Mail_Notifications(All_Tests.java:136)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
@@ -109,15 +108,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
-	... 32 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1403662281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1403662281'><pre>java.lang.NoClassDefFoundError: com/sun/mail/util/MailLogger
-	at javax.mail.Session.initLogger(Session.java:283)
-	at javax.mail.Session.&lt;init&gt;(Session.java:268)
-	at javax.mail.Session.getDefaultInstance(Session.java:378)
-	at javax.mail.Session.getDefaultInstance(Session.java:418)
-	at Mail.Check.get_emails(Check.java:194)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1325931357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1325931357'><pre>javax.mail.AuthenticationFailedException: authentication failed
+	at com.sun.mail.imap.IMAPStore.protocolConnect(IMAPStore.java:732)
+	at javax.mail.Service.connect(Service.java:366)
+	at javax.mail.Service.connect(Service.java:246)
+	at Mail.Check.get_emails(Check.java:201)
 	at Main.All_Tests.Mail_Notifications(All_Tests.java:136)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
@@ -145,11 +141,9 @@ Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
-	... 32 more
 </pre></div></td>
-<td>144</td>
-<td>Main.All_Tests@2805c96b</td></tr>
+<td>146</td>
+<td>Main.All_Tests@5db250b4</td></tr>
 </table><p>
 </body>
 </html>
